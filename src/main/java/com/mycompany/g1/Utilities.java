@@ -62,5 +62,15 @@ texto=salida;
 return texto;    
 }
 
-    
+//contar coincidencias en una frase de un texto buscado (ignore case)
+public int contarCoincidencias(String frase,String texto){
+int cont;    
+cont=frase.indexOf(texto);    
+return cont;
+}
+
+
+
+
+
 }
