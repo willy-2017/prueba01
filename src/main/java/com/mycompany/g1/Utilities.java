@@ -2,7 +2,7 @@
 package com.mycompany.g1;
 
 public class Utilities {
-//las primeras treinta letras(caracteres) del texto recibido  
+//1-las primeras treinta letras(caracteres) del texto recibido  
 public String getResume(String texto){
 String modificar;
 modificar=texto.substring(0,30);
@@ -10,7 +10,7 @@ texto=modificar;
 return texto;
 }
 
-//El texto que se ha recibido con cada palabra capitalizada
+//2-El texto que se ha recibido con cada palabra capitalizada
 public String Capitalizar(String texto){
        String salida = "";
         String modificado;
@@ -62,7 +62,7 @@ texto=salida;
 return texto;    
 }
 
-//contar coincidencias en una frase de un texto buscado 
+//3-contar coincidencias en una frase de un texto buscado 
 public int contarCoincidencias(String frase,String texto){
 int contador=0;
 
