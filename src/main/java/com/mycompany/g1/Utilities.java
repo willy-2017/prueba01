@@ -62,11 +62,23 @@ texto=salida;
 return texto;    
 }
 
-//contar coincidencias en una frase de un texto buscado (ignore case)
+//contar coincidencias en una frase de un texto buscado 
 public int contarCoincidencias(String frase,String texto){
-int cont;    
-cont=frase.indexOf(texto);    
-return cont;
+int contador=0;
+
+//convertir todo en minusculas en lugar de utilizar ignore case
+frase=frase.substring(0,frase.length()).toLowerCase();
+texto=texto.substring(0, texto.length()).toLowerCase();
+
+//contar
+while(frase.indexOf(texto)>-1){   
+ System.err.println(""+frase);
+ frase=frase.substring(frase.indexOf(texto)+texto.length(),frase.length());
+contador++;
+}
+
+
+return contador;
 }
 
 

@@ -5,11 +5,14 @@ public class Main {
  
     public static void main(String[] args) {
     Utilities a=new Utilities();
-    String frase="Una ventana es azul aunque la ventana sea negra"; 
+    String frase="Una ventana es azul aunque la cortina sea negra en la ventana"; 
     String texto="ventana";
-    a.contarCoincidencias(frase, texto);
-    System.out.println("cont="+a);
-    System.out.println("Hola mundo");    
+    int cont=a.contarCoincidencias(frase, texto);
+    System.out.println("cont="+cont);
+    
+
+
+    
     }
     
 }
